@@ -1,0 +1,47 @@
+/**
+ * 
+ */
+package com.evolvus.service;
+
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.evolvus.model.TaCBSlogging;
+import com.evolvus.repository.ITaCBSLogging;
+
+/**
+ * @author Nagendra is it ok oakny impact?
+ */
+@Service("asbaService")
+
+public class ASBAServices {
+
+	@Autowired
+	private ITaCBSLogging cbslogg;
+	
+	
+	//private ITaIssueCodeMasterRepository taisscodeMaster;
+
+	/*public List<TaIssueCodeMaster> finddataByIssueCode(String isscode) {
+
+		// List<TaIssueCodeMaster> list=taisscodeMaster.findByIssueCode(
+		// isscode);
+		List<TaIssueCodeMaster> list = taisscodeMaster.findAll();
+		return list;
+	}
+*/
+	
+	public  TaCBSlogging findByname(String webService)
+	{
+		
+		
+		TaCBSlogging tacbslog=	cbslogg.findByname(webService);
+		return tacbslog;
+		
+		
+	}
+}

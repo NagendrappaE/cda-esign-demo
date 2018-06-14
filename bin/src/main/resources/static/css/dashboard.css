@@ -1,0 +1,212 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+.navbar-collapse {padding: 0;}
+.row {margin: 0;}
+    .container {padding: 0;}
+div.container [class*="col-sm-"]{
+padding: 0;}
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    /* button style */
+.header_button {
+    margin-top: 10px;
+    margin-bottom: 0;
+float: left;
+}
+
+.header_button .btn-primary {
+    border: 1px solid #f7f7f7;
+    border-radius: 1px;
+}
+/* header */
+
+.header_icon_left {
+    float: left;
+    margin-right: 13px;
+    padding-top: 17px; 
+}
+.header_icon_left span{
+cursor: pointer;  transition: all 0.3s ease;
+}
+.header_icon_left span:hover {color: #F38020;}
+.header_right{ width: 30%;}
+/* header time zone */
+.header_zone {
+    float: left;
+    margin-left: 30px;
+    margin-top: 17px;
+}
+.header_zone select {
+    background-color: transparent;
+    border: transparent;
+    color: #fff;
+    font-size: 14px;
+}
+.rounded_corner {
+  float: left;
+    color: #A3A3A3;
+    background-color: #333;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 23px;
+    margin-left: 3px;
+}
+.rounded_corner.question-icon {
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 600;
+}
+.header_zone span {
+    color: #fff;
+    font-size: 15px;
+    margin-right: 5px;
+    font-weight: 300;
+}
+.icon-list {
+    float: right;
+    margin-top: 18px;   
+}
+.icon-list .rounded_corner{
+cursor: pointer;  transition: all 0.3s ease;
+}
+.icon-list .rounded_corner:hover {color: #F38020;}
+/* call actions */
+.call_action_label{    color: #F4852A;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;}
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #fff;
+      height: 100%;
+  border-right: 1px solid #7FC733;
+    }
+.sidenav img{ margin-bottom: 25px; float: left; margin-left: 35px;}
+.sidenav ul{margin: 0; width: 100%;}
+.sidenav ul li{
+    display: block;
+    text-align: left;
+    width: 100%;
+float: none;
+margin-bottom: 6px;
+background: #f7f7f7;
+border-radius: 4px;
+}
+.nav li a span {
+    background: #fff;
+    color: #F38020;
+    border-radius: 50%;
+    font-size: 10px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    line-height: 21px;
+    text-align: center;
+    top: auto;
+}
+.sidenav ul li a {
+    color: #2375a3; padding-left: 20px;
+}
+.sidenav ul li.active a,
+.sidenav ul li:hover a {
+   background: #F38020;
+color: #FFF;    border-radius: 4px;
+}
+    .navbar-inverse{background-color: #2375A3; height: 80px; 
+    border: none;}
+    .header_icon_color{color: #FFF; font-size: 18px;}
+    .padding_both{padding:12px;}
+    .header_logo_label{font-size: 18px; color: #FFF;}
+    .header_logo_label span{float: left; padding-right: 8px;}
+    .label_orange{color: #FEC32B;}
+    .font_bigger{ font-weight: 600;}
+/* select box */
+select{    cursor: pointer;}
+.call_action_select {
+    float: left;    padding-top: 3px;
+}
+.call_action_select select{    border-top: none;
+    border-bottom: 1px solid #333;
+    border-left: none;
+    border-right: none;
+    background: url(../images/downarrow1.png) no-repeat scroll 100% 27% transparent;
+    outline: none;
+    padding-bottom: 3px;
+    font-size: 11px;
+    background-size: 9px 8px !important;
+    -webkit-appearance: none;
+-moz-appearance: none;
+-ms-appearance: none;
+    padding-right: 21px;
+    color: #716e6e;
+}
+.call_action_settings {
+    float: right;
+    font-size: 25px;    cursor: pointer;
+}
+.call_action_settings span{
+cursor: pointer;  transition: all 0.3s ease;
+}
+.call_action_settings span:hover {color: #F38020;}
+.extra_icons {
+    margin-top: 25px;    width: 14%;
+}
+/* ruler */
+.ruler hr {
+    margin-top: 1px;
+}
+/* main content */
+div.container [class*="col-sm-"].content_main{padding-left: 25px;}
+    
+
+/* tabs */
+.nav-tabs {
+    background: #2375a3;
+border-top-radius: 4px;
+}
+.nav-tabs li{margin-bottom: 0;     width: 19.3%;
+    text-align: center;}
+.nav-tabs li a {    color: #fff;border-radius: 0px;text-transform: uppercase; border: none; margin-right: 0;
+    transition: all .5s;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover,
+.nav-tabs>li:hover a:hover{
+    background: #F38020;border-radius: 4px;
+border: none;
+    color: #fff;
+}
+#exTab2 .tab-content p{margin-top: 15px;}
+.top{width: 95%; position: absolute; top: 25px;}
+.menu{ text-align: right; display: inline-block; width: 70%;}
+.menu li {display: inline-block; padding: 2px 15px;}
+.examples{position: relative; width: 100%; margin: 30px 10px;}
+.examples ul{text-align: center}
+.examples ul li{display: inline-block; padding: 5px 10px;}
+/* Set Footer background color, white text and some padding */
+    footer {
+     background-color: #014B6C;
+    color: white;
+    padding: 23px;
+    position: absolute;
+    border-top: 6px solid #FEC32B;
+    width: 100%;
+    bottom: 0;
+    }
+    footer p{height: 30px; line-height: 30px; margin: 0;}
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
