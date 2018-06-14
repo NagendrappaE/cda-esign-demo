@@ -801,10 +801,10 @@ public class FLuxController {
 		}
 	}
 
-	@RequestMapping(value = "/CDACREQ", method = RequestMethod.POST)
-	public ResponseEntity<ResponseJson> returnXml(@RequestParam("aadharNum") String aadharNumber)
+	@RequestMapping(value = "/CDACREQ", method = RequestMethod.POST,produces = "application/xml")
+	public String returnXml(@RequestParam("aadharNum") String aadharNumber)
 			throws FileNotFoundException {
-
+		String signedXml =null;
 		Map<String, Object> valueMap = new HashMap<>();
 		String reqXml = Pain009Request.Pain009;
 		XmlStrSubstitutor sub = new XmlStrSubstitutor(valueMap);
@@ -852,7 +852,7 @@ public class FLuxController {
 			System.out.println("the private key :::::::" + keypair.getPrivate());
 			CreateSignature createSignature = new CreateSignature();
 			String xmlString = "Hi thsi  is nagendra";
-			String signedXml = createSignature.signFile(cdacRequestedxml, keypair.getPrivate());
+			 signedXml = createSignature.signFile(cdacRequestedxml, keypair.getPrivate());
 
 			System.out.println("signed xml::::::" + signedXml);
 
@@ -867,7 +867,7 @@ public class FLuxController {
 			resEntity = new ResponseEntity<ResponseJson>(res, HttpStatus.INTERNAL_SERVER_ERROR);
 			e.printStackTrace();
 		}
-		return resEntity;
+		return signedXml;
 
 	}
 
