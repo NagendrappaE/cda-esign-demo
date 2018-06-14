@@ -1,0 +1,231 @@
+/*
+Created by Sridhar */
+
+body{color: #555 !important;}
+.form-control {
+	background: transparent none repeat scroll 0% 0%;
+	border: medium none !important;
+	box-shadow: none;
+	margin-top: 2px;
+/* 	float: left;
+	width: 48%; */
+	margin-right: 10px;
+}
+
+.form-control label {
+	font-size: 13px;
+	font-weight: 300;
+	vertical-align: middle;
+	height: 31px;
+	float: left;
+	width: 35%;
+}
+
+.form-control input{
+	height: 24px;
+	width: 238px;    font-size: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;    padding: 0 0 0 7px;
+}
+#command input{    height: 30px;
+    width: 238px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    padding: 0 0 0 7px;}
+.form-control select {
+	width: 238px;    font-size: 12px;    padding: 0 0 0 7px; height: 24px;
+}
+.marginTop{margin-top:30px;}
+.form-horizontal #legend b {
+	color: #2375A3;
+	font-size: 20px;
+	font-weight: 300;
+	margin-bottom: 7px;
+	display: inline-block;
+}
+.form-control span {
+    font-size: 11px;
+    clear: both;
+    float: left;
+    width: 56%;right: 7px;
+    position: relative;
+    text-align: right;
+    bottom: 5px;
+}
+
+/******************** checkbox & radio color ***************/ 
+input[type="radio"],
+input[type="checkbox"] {
+    height: 18px;
+    width: 18px;
+    vertical-align: top;
+    margin: 0 0.4em 0.4em 0;
+    border: 1px solid #ccc;
+  
+    -webkit-appearance: none;
+    -webkit-transition: box-shadow 200ms;
+     -moz-appearance: none;
+    -moz-transition: box-shadow 200ms;
+     -ms-appearance: none;
+    -ms-transition: box-shadow 200ms;
+  
+}
+
+/* border radius for radio*/
+input[type="radio"] {
+    -webkit-border-radius:100%;
+    border-radius:100%;
+}
+
+/* border radius for checkbox */
+input[type="checkbox"] {
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    -ms-border-radius:2px;
+    border-radius:2px;
+}
+
+/* hover state */
+input[type="radio"]:not(:disabled):hover,
+input[type="checkbox"]:not(:disabled):hover {
+    border-color: #ff8500;
+    
+}
+
+/* active state */
+input[type="radio"]:active:not(:disabled),
+input[type="checkbox"]:active:not(:disabled) {
+    border-color: #ff8500;
+}
+
+/* focus state */
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+    outline:none;
+  
+}
+
+/* input checked border color */
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    border-color: #ff8500 !important;
+    background-color: #fff;
+}
+span#splitsAcctDiv input {
+    margin: 3px 10px 0 0;
+}
+/* radio checked */
+input[type="radio"]:checked:before {
+display: block;
+    height: 8px;
+    width: 8px;
+    position: relative;
+    left: 0px;
+    top: 1px;
+    background: #ff8500;
+    border-radius: 100%;
+    content: '';
+}
+
+/* checkbox checked */
+input[type="checkbox"]:checked:before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 11px;
+    border: solid #ff8500;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-left: 5px;
+    margin-top: 2px;
+}
+select {  background: url(../images/downarrow1.png) no-repeat scroll 96% center transparent !important;
+ outline: none;     background-size: 18px 10px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;}
+    .btnFormat{clear: both; margin-top:20px;display: inline-block;
+width: 100%;}
+.btnFormat > button {margin-right: 10px;}
+    .btnFormat > input {margin-right: 10px;  min-width: 100px;
+	padding: 6px 15px;
+	font-size:12px;
+    box-shadow: 2px 2px 0px #eaeaea;}
+    .btnFormat > input.btn-primary{}
+    .btnFormat > input.btn-default{}
+    #exTab2 {
+    margin-top: 30px;
+    margin-block-end: 20px;
+}
+div#legend {
+    margin-top: 33px;
+}
+fieldset {
+       display: block;
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    -webkit-padding-before: 0.35em;
+    -webkit-padding-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+    -webkit-padding-after: 0.625em;
+    min-width: -webkit-min-content;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #2375a3;
+    border-image: initial;
+    margin: 11px 0 0;
+    clear: both;
+    border-radius: 4px;
+}
+legend {
+  display: block;
+    -webkit-padding-start: 2px;
+    -webkit-padding-end: 2px;
+    border-width: initial;
+    border-style: none;
+    background: transparent;
+    min-width: 3%;
+    border-color: initial;
+    border-image: initial;
+    font-size: 13px;
+    color: #2375a3;
+    max-width: 11%;
+    width: auto;
+    margin: 0 0 0 6px;padding-left: 4px;
+}
+/** login form */
+#loginForm{
+    width: 36%;
+    margin: 30px auto;
+    display: block;
+    position: absolute;
+    top:18%;
+    left: 50%;
+    transform: translate(-50%);
+        padding-top: 11px;
+            padding-bottom: 30px;
+}
+
+.mainheader .nav li a span{
+	background:none;
+	font-size:18px;
+	/* padding-top: 18px; */
+	    position: relative;
+    top: 16px;
+    left: 0;
+    margin-left: -16px;
+}
+
+.enquiryBtn:hover{background-color:#ff8500;color:#fff;text-shadow: none;border-color:#ff8500;}
+.tooltipAlign .tooltip.bottom{
+	/* position:relative;
+	top:15px; */
+}
+
+
+.enquirySec table th{color:#555;font-weight:300; text-shadow: none;}
