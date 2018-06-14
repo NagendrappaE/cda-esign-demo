@@ -129,7 +129,7 @@ public class FLuxController {
 	 * showWelcomePage(ModelMap model) { model.put("name", "nagendra"); return
 	 * "login"; }
 	 */
-	@RequestMapping(value = "/home", method = RequestMethod.GET)
+	@RequestMapping(value = "home", method = RequestMethod.GET)
 	public String showWelcomePage(ModelMap model) {
 		List<String> utilityCodes = new ArrayList<String>();
 		utilityCodes.add("NACH00000000001");
